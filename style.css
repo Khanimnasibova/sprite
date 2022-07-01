@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./images/a.png);
+    background-size: cover;
+    background-repeat: no-repeat
+}
+header{
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul li, ul{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    color: #fff;
+    font-size: 27px;
+    text-decoration: none;
+    padding: 15px;
+}
+.left-section img{
+    object-fit: contain;
+    width: 300px;
+    margin-left: 10px;
+    position: absolute;
+    margin-top: -20px;
+}
+.right-section{
+    margin-left: 1000px;
+    margin-top: 20px;
+}
+ul li ul{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    
+}
+ul li:hover >ul,
+ul li ul:hover{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    background: #fff;
+    width: 155px;
+    position: absolute;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+ul li ul li a:hover{
+    color: green;
+   
+
+}
+ul li ul li a{
+    color: green;
+   
+}
+ul li ul li{
+    padding: 10px;
+}
+.contact:hover{
+    background: #fff;
+    
+}
+.contact a:hover{
+    color: green;
+    
+}
+.contact a{
+    color: black;
+}
+.right-main img{
+    width: 500px;
+    margin-left: 470px;
+    margin-top: 140px;
+}
+.left-main{
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 240px;
+}
+.left-main h2{
+    font-size: 70px;
+    color: green;
+}
+.left-main span{
+    color: white;
+    background: green;
+}
+.right-main{
+    background: url(./images/bottle.png);
+    background-repeat: no-repeat;
+    background-position: 497px 300px;
+    background-size: 500px;
+    
+}
+.right-main img:hover{
+    opacity: 0;
+    cursor: pointer;
+    transition: all 1s ease-in;
+   
+}
+.left-main span:hover{
+    background: none;
+    color: transparent;
+    cursor: pointer;
+}
+.left-main span:hover:before{
+    content: "SPRITE";
+    color: green;
+    font-size: 70px;
+}
